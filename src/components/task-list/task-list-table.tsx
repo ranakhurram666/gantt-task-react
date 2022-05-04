@@ -38,6 +38,7 @@ export const TaskListTableDefault: React.FC<{
   selectedTaskId: string;
   setSelectedTask: (taskId: string) => void;
   onExpanderClick: (task: Task) => void;
+  onCheckboxClick: (task: Task) => void;
 }> = ({
   rowHeight,
   rowWidth,
@@ -46,6 +47,7 @@ export const TaskListTableDefault: React.FC<{
   fontSize,
   locale,
   onExpanderClick,
+  onCheckboxClick
 }) => {
   const toLocaleDateString = useMemo(
     () => toLocaleDateStringFactory(locale),
@@ -93,7 +95,11 @@ export const TaskListTableDefault: React.FC<{
                 >
                   {expanderSymbol}
                 </div>
-                <div>{t.name}</div>
+                <div>
+                  
+                {!expanderSymbol && 
+              <input type='checkbox' key={`${t.id}checkbox`} checked={t.isSelected} onClick={() => onCheckboxClick(t)}/>}
+                  &nbsp;{t.name}</div>
               </div>
             </div>
             <div

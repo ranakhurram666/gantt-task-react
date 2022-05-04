@@ -30,6 +30,7 @@ export interface Task {
   hideChildren?: boolean;
   displayOrder?: number;
   priority?: number;
+  isSelected?: boolean;
 }
 
 export interface EventOption {
@@ -67,6 +68,9 @@ export interface EventOption {
    * Invokes on expander on task list
    */
   onExpanderClick?: (task: Task) => void;
+
+  
+  onCheckboxClick?: (task: Task) => void;
 }
 
 export interface DisplayOption {
@@ -131,6 +135,7 @@ export interface StylingOption {
      */
     setSelectedTask: (taskId: string) => void;
     onExpanderClick: (task: Task) => void;
+    onCheckboxClick: (task: Task) => void;
   }>;
 }
 
