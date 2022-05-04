@@ -81,7 +81,7 @@ export const TaskList: React.FC<TaskListProps> = ({
   };
 
   return (
-    <div ref={taskListRef} style={{minWidth: '270px', maxWidth: '270px', overflowX: 'scroll', display: 'grid'}}>
+    <div ref={taskListRef} style={{minWidth: '210px', maxWidth: '210px', overflowX: 'scroll', display: 'grid'}}>
       <TaskListHeader {...headerProps} />
       <div
         ref={horizontalContainerRef}
