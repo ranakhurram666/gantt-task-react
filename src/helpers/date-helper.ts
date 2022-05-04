@@ -156,13 +156,14 @@ export const seedDates = (
 
 export const getLocaleMonth = (date: Date, locale: string) => {
   let bottomValue = getCachedDateTimeFormat(locale, {
-    month: "long",
+    month: "short",
   }).format(date);
   bottomValue = bottomValue.replace(
     bottomValue[0],
     bottomValue[0].toLocaleUpperCase()
   );
-  return bottomValue;
+  const year = date.getFullYear();
+  return `${bottomValue}-${year}`;
 };
 
 export const getLocalDayOfWeek = (

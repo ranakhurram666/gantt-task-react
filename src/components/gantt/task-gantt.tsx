@@ -42,6 +42,7 @@ export const TaskGantt: React.FC<TaskGanttProps> = ({
       className={styles.ganttVerticalContainer}
       ref={verticalGanttContainerRef}
       dir="ltr"
+      style={{width: 'auto', overflowX: 'scroll'}}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

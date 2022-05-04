@@ -58,6 +58,7 @@ export const TaskListTableDefault: React.FC<{
       style={{
         fontFamily: fontFamily,
         fontSize: fontSize,
+        width: '100%',
       }}
     >
       {tasks.map(t => {
@@ -67,7 +68,6 @@ export const TaskListTableDefault: React.FC<{
         } else if (t.hideChildren === true) {
           expanderSymbol = "▶";
         }
-
         return (
           <div
             className={styles.taskListTableRow}
@@ -77,8 +77,8 @@ export const TaskListTableDefault: React.FC<{
             <div
               className={styles.taskListCell}
               style={{
-                minWidth: rowWidth,
-                maxWidth: rowWidth,
+                minWidth: '205px',
+                maxWidth: '205px',
               }}
               title={t.name}
             >
@@ -95,6 +95,15 @@ export const TaskListTableDefault: React.FC<{
                 </div>
                 <div>{t.name}</div>
               </div>
+            </div>
+            <div
+              className={styles.taskListCell}
+              style={{
+                minWidth: rowWidth,
+                maxWidth: rowWidth,
+              }}
+            >
+              {t.priority}
             </div>
             <div
               className={styles.taskListCell}

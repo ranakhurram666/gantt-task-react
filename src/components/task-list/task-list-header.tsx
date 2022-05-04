@@ -13,6 +13,7 @@ export const TaskListHeaderDefault: React.FC<{
       style={{
         fontFamily: fontFamily,
         fontSize: fontSize,
+        width: '100%',
       }}
     >
       <div
@@ -24,10 +25,18 @@ export const TaskListHeaderDefault: React.FC<{
         <div
           className={styles.ganttTable_HeaderItem}
           style={{
-            minWidth: rowWidth,
+            minWidth: '205px',
           }}
         >
           &nbsp;Name
+        </div>
+        <div
+          className={styles.ganttTable_HeaderItem}
+          style={{
+            minWidth: rowWidth,
+          }}
+        >
+          &nbsp;Priority
         </div>
         <div
           className={styles.ganttTable_HeaderSeparator}
