@@ -40,6 +40,7 @@ export const TaskListHeaderDefault: React.FC<{
           className={styles.ganttTable_HeaderItem}
           style={{
             minWidth: rowWidth,
+            textAlign: 'center'
           }}
         >
           &nbsp;Priority
