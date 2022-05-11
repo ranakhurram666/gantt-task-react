@@ -107,6 +107,7 @@ export const TaskListTableDefault: React.FC<{
               style={{
                 minWidth: rowWidth,
                 maxWidth: rowWidth,
+                textAlign: 'center'
               }}
             >
               {t.priority}
