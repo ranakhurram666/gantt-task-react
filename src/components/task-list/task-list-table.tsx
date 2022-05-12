@@ -99,7 +99,7 @@ export const TaskListTableDefault: React.FC<{
                   
                 {!expanderSymbol && 
               <input type='checkbox' key={`${t.id}checkbox`} checked={t.isSelected} onClick={() => onCheckboxClick(t)}/>}
-                  &nbsp;{t.name}</div>
+                 &nbsp;{expanderSymbol ? <span style={{fontWeight: 600 }}>{t.name}</span> : t.name}</div>
               </div>
             </div>
             <div

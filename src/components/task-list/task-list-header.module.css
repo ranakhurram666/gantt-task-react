@@ -21,3 +21,9 @@
   vertical-align: -webkit-baseline-middle;
   vertical-align: middle;
 }
+
+.ganttChart_headerp{
+  border-top: #e6e4e4 1px solid;
+  margin: 0 ;
+  text-align: center;
+}
