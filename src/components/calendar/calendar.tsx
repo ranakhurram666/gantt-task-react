@@ -45,6 +45,10 @@ export const Calendar: React.FC<CalendarProps> = ({
           y={headerHeight * 0.8}
           x={columnWidth * i + columnWidth * 0.5}
           className={styles.calendarBottomText}
+          style={{
+            color: '#727474',
+            fontWeight: 600
+          }}
         >
           {bottomValue}
         </text>
@@ -98,6 +102,10 @@ export const Calendar: React.FC<CalendarProps> = ({
           y={headerHeight * 0.8}
           x={columnWidth * (i + +rtl)}
           className={styles.calendarBottomText}
+          style={{
+            color: '#727474',
+            fontWeight: 600
+          }}
         >
           {bottomValue}
         </text>
@@ -142,6 +150,10 @@ export const Calendar: React.FC<CalendarProps> = ({
           y={headerHeight * 0.8}
           x={columnWidth * i + columnWidth * 0.5}
           className={styles.calendarBottomText}
+          style={{
+            color: '#727474',
+            fontWeight: 600
+          }}
         >
           {bottomValue}
         </text>

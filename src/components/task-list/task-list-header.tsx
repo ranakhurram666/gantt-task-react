@@ -25,66 +25,69 @@ export const TaskListHeaderDefault: React.FC<{
         <div
           className={styles.ganttTable_HeaderItem}
           style={{
-            minWidth: '1px',
+            minWidth: '5px',
           }}
         ></div>
         <div
           className={styles.ganttTable_HeaderItem}
           style={{
             minWidth: '205px',
-            verticalAlign: 'bottom'
+            color: '#727474',
+            fontWeight: 600
           }}
         >
-          <p className={styles.ganttChart_headerp} style={{ paddingTop:headerHeight * 0.1,height: headerHeight * .45 }}>Name</p>
+          &nbsp;Name
         </div>
         <div
           className={styles.ganttTable_HeaderSeparator}
           style={{
-            height: headerHeight,
-            // marginTop: headerHeight * 0.2,
+            height: headerHeight * 0.5,
+            marginTop: headerHeight * 0.2,
           }}
         />
         <div
           className={styles.ganttTable_HeaderItem}
           style={{
             minWidth: rowWidth,
-            textAlign: 'center',
-            verticalAlign: 'bottom'
+            color: '#727474',
+            fontWeight: 600
           }}
         >
-          <p className={styles.ganttChart_headerp} style={{ paddingTop:headerHeight * 0.1,height: headerHeight * .45 }}>Priority</p>
+          &nbsp;Priority
         </div>
         <div
           className={styles.ganttTable_HeaderSeparator}
           style={{
-            height: headerHeight,
-            // marginTop: headerHeight * 0.2,
+            height: headerHeight * 0.5,
+            marginTop: headerHeight * 0.2,
           }}
         />
         <div
           className={styles.ganttTable_HeaderItem}
           style={{
             minWidth: rowWidth,
-            verticalAlign: 'bottom'
+            color: '#727474',
+            fontWeight: 600
           }}
         >
-          <p className={styles.ganttChart_headerp} style={{ paddingTop:headerHeight * 0.1,height: headerHeight * .45 }}>From</p>
+          &nbsp;From
         </div>
         <div
           className={styles.ganttTable_HeaderSeparator}
           style={{
-            height: headerHeight,
-            // marginTop: headerHeight * 0.25,
+            height: headerHeight * 0.5,
+            marginTop: headerHeight * 0.25,
           }}
         />
         <div
           className={styles.ganttTable_HeaderItem}
           style={{
             minWidth: rowWidth,
-            verticalAlign: 'bottom'
+            color: '#727474',
+            fontWeight: 600
           }}
         >
-          <p className={styles.ganttChart_headerp} style={{ paddingTop:headerHeight * 0.1,height: headerHeight * .45 }}>To</p>
+          &nbsp;To
         </div>
       </div>
     </div>

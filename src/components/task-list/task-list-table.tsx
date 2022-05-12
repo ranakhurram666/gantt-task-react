@@ -117,6 +117,7 @@ export const TaskListTableDefault: React.FC<{
               style={{
                 minWidth: rowWidth,
                 maxWidth: rowWidth,
+                textAlign: 'center'
               }}
             >
               &nbsp;{toLocaleDateString(t.start, dateTimeOptions)}
@@ -126,6 +127,7 @@ export const TaskListTableDefault: React.FC<{
               style={{
                 minWidth: rowWidth,
                 maxWidth: rowWidth,
+                textAlign: 'center'
               }}
             >
               &nbsp;{toLocaleDateString(t.end, dateTimeOptions)}

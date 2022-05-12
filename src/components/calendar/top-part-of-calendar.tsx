@@ -33,6 +33,10 @@ export const TopPartOfCalendar: React.FC<TopPartOfCalendarProps> = ({
         y={yText}
         x={xText}
         className={styles.calendarTopText}
+        style={{
+          color: '#727474',
+          fontWeight: 600
+        }}
       >
         {value}
       </text>
