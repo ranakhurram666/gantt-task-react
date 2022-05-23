@@ -53,7 +53,7 @@ export const TaskListHeaderDefault: React.FC<{
             fontWeight: 600
           }}
         >
-          &nbsp;Priority
+          &nbsp;Strategic Value
         </div>
         <div
           className={styles.ganttTable_HeaderSeparator}
