@@ -63,7 +63,8 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
   onDelete,
   onSelect,
   onExpanderClick,
-  onCheckboxClick
+  onCheckboxClick,
+  onItemClick
 }) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const taskListRef = useRef<HTMLDivElement>(null);
@@ -377,6 +378,11 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
       onCheckboxClick({...task})
     }
   };
+  const handleItemClick = (task: Task) => {
+    if (onItemClick && task.isSelected !== undefined) {
+      onItemClick({...task})
+    }
+  };
 
   const gridProps: GridProps = {
     columnWidth,
@@ -437,6 +443,7 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
     setSelectedTask: handleSelectedTask,
     onExpanderClick: handleExpanderClick,
     onCheckboxClick: handleCheckboxClick,
+    onItemClick: handleItemClick,
     TaskListHeader,
     TaskListTable,
   };

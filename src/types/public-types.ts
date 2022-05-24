@@ -71,6 +71,7 @@ export interface EventOption {
 
   
   onCheckboxClick?: (task: Task) => void;
+  onItemClick?: (task: Task) => void;
 }
 
 export interface DisplayOption {
@@ -136,6 +137,7 @@ export interface StylingOption {
     setSelectedTask: (taskId: string) => void;
     onExpanderClick: (task: Task) => void;
     onCheckboxClick: (task: Task) => void;
+    onItemClick: (task: Task) => void;
   }>;
 }
 
